@@ -3,7 +3,8 @@
 			this.Window = new UIWindow();
 			this.Window.Frame = UIScreen.MainScreen.Bounds;
 
-			var viewcontrollerA = new ViewControllerA ();
-			var rootNavigationController = new UINavigationController(viewcontrollerA);
 
-			this.Window.RootViewController = rootNavigationController;
+			ViewControllerA vca = new ViewControllerA ();
+			UINavigationController rnc = new UINavigationController(vca);
+
+			this.Window.RootViewController = rnc;
